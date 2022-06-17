@@ -1,0 +1,140 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 77.62     32.26    32.26                             conv_forward_cpu(float*, float const*, float const*, int, int, int, int, int, int)
+  3.30     33.63     1.37                             MaxPooling::forward(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&)
+  1.06     34.07     0.44                             Eigen::DenseStorage<float, -1, -1, -1, 0>::rows() const
+  1.01     34.49     0.42                             Eigen::internal::variable_if_dynamic<long, -1>::variable_if_dynamic(long)
+  0.72     34.79     0.30                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::coeffRef(long)
+  0.72     35.09     0.30                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1>::operator()(long)
+  0.67     35.37     0.28                             Eigen::EigenBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::derived() const
+  0.65     35.64     0.27                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::evaluator(Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > const&)
+  0.64     35.91     0.27                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, -1, 0, -1, -1>, 1>::coeffRef(long, long)
+  0.58     36.15     0.24                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::evaluator(Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> > const&)
+  0.51     36.36     0.21                             Eigen::DenseStorage<float, -1, -1, -1, 0>::data() const
+  0.51     36.57     0.21                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, -1, 0, -1, -1>, 3>::outerStride() const
+  0.41     36.74     0.17                             Eigen::DenseStorage<float, -1, -1, -1, 0>::cols() const
+  0.37     36.89     0.16                             Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::evaluator(Eigen::Matrix<float, -1, 1, 0, -1, 1> const&)
+  0.37     37.05     0.16                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::cols() const
+  0.36     37.20     0.15                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::coeffRef(long, long)
+  0.36     37.35     0.15                             Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::cols() const
+  0.35     37.49     0.15                             Eigen::DenseStorage<float, -1, -1, 1, 0>::data() const
+  0.34     37.63     0.14                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::coeffRef(long)
+  0.34     37.77     0.14                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::rows() const
+  0.32     37.91     0.14                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, -1, 0, -1, -1>, 1>::operator()(long, long)
+  0.32     38.04     0.14                             Eigen::DenseStorage<float, -1, -1, 1, 0>::rows() const
+  0.31     38.17     0.13                             Eigen::EigenBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::rows() const
+  0.31     38.30     0.13                             Eigen::internal::evaluator_base<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::evaluator_base()
+  0.31     38.43     0.13                             Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::evaluator(Eigen::Matrix<float, -1, -1, 0, -1, -1> const&)
+  0.31     38.56     0.13                             Eigen::DenseBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::innerSize() const
+  0.29     38.68     0.12                             Eigen::internal::evaluator_base<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::evaluator_base()
+  0.29     38.80     0.12                             Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::size() const
+  0.26     38.91     0.11                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::data() const
+  0.26     39.02     0.11                             Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::derived() const
+  0.25     39.13     0.11                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::rows() const
+  0.24     39.23     0.10                             void Eigen::internal::pstore<float, float __vector(4)>(float*, float __vector(4) const&)
+  0.24     39.33     0.10                             Eigen::Matrix<float, -1, -1, 0, -1, -1>::outerStride() const
+  0.24     39.43     0.10                             std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.22     39.52     0.09                             Eigen::internal::noncopyable::noncopyable()
+  0.22     39.61     0.09                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> > >::~evaluator()
+  0.19     39.69     0.08                             float __vector(4) Eigen::internal::pload<float __vector(4)>(Eigen::internal::unpacket_traits<float __vector(4)>::type const*)
+  0.19     39.77     0.08                             Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~evaluator()
+  0.19     39.85     0.08                             Eigen::EigenBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::cols() const
+  0.17     39.92     0.07                             Eigen::internal::evaluator_base<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::~evaluator_base()
+  0.17     39.99     0.07                             Eigen::DenseBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::DenseBase()
+  0.17     40.06     0.07                             Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::rows() const
+  0.17     40.13     0.07                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::data() const
+  0.17     40.20     0.07                             float __vector(4) Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::packet<16, float __vector(4)>(long) const
+  0.17     40.27     0.07                             std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned long)
+  0.14     40.33     0.06                             Eigen::internal::variable_if_dynamic<long, -1>::value() const
+  0.13     40.38     0.06                             Eigen::internal::evaluator_base<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::~evaluator_base()
+  0.13     40.44     0.06                             Eigen::EigenBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::derived()
+  0.12     40.49     0.05                             float __vector(4) Eigen::internal::pmax<float __vector(4)>(float __vector(4) const&, float __vector(4) const&)
+  0.12     40.54     0.05                             float __vector(4) Eigen::internal::ploadu<float __vector(4)>(Eigen::internal::unpacket_traits<float __vector(4)>::type const*)
+  0.12     40.59     0.05                             Eigen::EigenBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::derived()
+  0.12     40.64     0.05                             void Eigen::internal::gebp_traits<float, float, false, false>::madd<float __vector(4), float __vector(4), float __vector(4)>(float __vector(4) const&, float __vector(4) const&, float __vector(4)&, float __vector(4)&) const
+  0.11     40.68     0.05                             Eigen::DenseStorage<float, -1, -1, 1, 0>::cols()
+  0.11     40.73     0.05                             void Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >, Eigen::internal::evaluator<Eigen::Block<Eigen::Matrix<float, -1, -1, 0, -1, -1> const, -1, 1, true> >, Eigen::internal::assign_op<float, float>, 0>::assignPacket<16, 0, float __vector(4)>(long)
+  0.10     40.77     0.04                             Eigen::internal::variable_if_dynamic<long, 0>::variable_if_dynamic(long)
+  0.10     40.81     0.04                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::~evaluator()
+  0.10     40.85     0.04                             Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::~evaluator()
+  0.10     40.89     0.04                             Eigen::DenseCoeffsBase<Eigen::Matrix<float, -1, -1, 0, -1, -1>, 0>::coeff(long) const
+  0.07     40.92     0.03                             Eigen::internal::noncopyable::~noncopyable()
+  0.07     40.95     0.03                             float __vector(4) Eigen::internal::pmul<float __vector(4)>(float __vector(4) const&, float __vector(4) const&)
+  0.07     40.98     0.03                             MNIST::read_mnist_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Eigen::Matrix<float, -1, -1, 0, -1, -1>&, int)
+  0.07     41.01     0.03                             void Eigen::internal::assign_op<float, float>::assignPacket<16, float __vector(4)>(float*, float __vector(4) const&) const
+  0.07     41.04     0.03                             Eigen::internal::Assignment<Eigen::Matrix<float, -1, -1, 0, -1, -1>, Eigen::Matrix<float, -1, -1, 0, -1, -1>, Eigen::internal::assign_op<float, float>, Eigen::internal::Dense2Dense, void>::run(Eigen::Matrix<float, -1, -1, 0, -1, -1>&, Eigen::Matrix<float, -1, -1, 0, -1, -1> const&, Eigen::internal::assign_op<float, float> const&)
+  0.07     41.07     0.03                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::cols() const
+  0.07     41.10     0.03                             Eigen::internal::evaluator<Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::coeff(long) const
+  0.06     41.12     0.03                             float __vector(4) Eigen::internal::evaluator<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> > >::packet<16, float __vector(4), long>(long) const
+  0.05     41.14     0.02                             Eigen::DenseStorage<float, -1, -1, -1, 0>::resize(long, long, long)
+  0.05     41.16     0.02                             void Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >, Eigen::internal::evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_max_op<float, float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> const, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> > const> >, Eigen::internal::assign_op<float, float>, 0>::assignPacket<16, 16, float __vector(4)>(long)
+  0.05     41.18     0.02                             void Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >, Eigen::internal::evaluator<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> > >, Eigen::internal::assign_op<float, float>, 0>::assignPacket<16, 16, float __vector(4)>(long)
+  0.05     41.20     0.02                             float __vector(4) Eigen::internal::pset1<float __vector(4)>(Eigen::internal::unpacket_traits<float __vector(4)>::type const&)
+  0.05     41.22     0.02                             __gnu_cxx::new_allocator<Layer*>::deallocate(Layer**, unsigned long)
+  0.05     41.24     0.02                             Eigen::Matrix<float, -1, -1, 0, -1, -1>::innerStride() const
+  0.05     41.26     0.02                             void Eigen::internal::add_assign_op<float, float>::assignPacket<16, float __vector(4)>(float*, float __vector(4) const&) const
+  0.05     41.28     0.02                             float __vector(4) Eigen::internal::binary_evaluator<Eigen::CwiseBinaryOp<Eigen::internal::scalar_max_op<float, float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> const, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Matrix<float, -1, -1, 0, -1, -1> > const>, Eigen::internal::IndexBased, Eigen::internal::IndexBased, float, float>::packet<16, float __vector(4)>(long) const
+  0.05     41.30     0.02                             float __vector(4) const Eigen::internal::scalar_constant_op<float>::packetOp<float __vector(4)>() const
+  0.05     41.32     0.02                             void std::_Destroy_aux<true>::__destroy<Layer**>(Layer**, Layer**)
+  0.04     41.34     0.02                             Eigen::internal::conj_helper<float __vector(4), float __vector(4), false, false>::pmul(float __vector(4) const&, float __vector(4) const&) const
+  0.04     41.35     0.02                             Eigen::VectorwiseOp<Eigen::Matrix<float, -1, -1, 0, -1, -1>, 1>::VectorwiseOp(Eigen::Matrix<float, -1, -1, 0, -1, -1>&)
+  0.04     41.37     0.02                             Eigen::Matrix<float, -1, 1, 0, -1, 1>& Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::_set_noalias<Eigen::Block<Eigen::Matrix<float, -1, 1, 0, -1, 1> const, -1, -1, false> >(Eigen::DenseBase<Eigen::Block<Eigen::Matrix<float, -1, 1, 0, -1, 1> const, -1, -1, false> > const&)
+  0.04     41.38     0.02                             std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::linear_congruential_engine(unsigned long)
+  0.02     41.39     0.01                             _GLOBAL__sub_I__Z14inference_onlyi
+  0.02     41.40     0.01                             Eigen::DenseStorage<float, -1, -1, 1, 0>::data()
+  0.02     41.41     0.01                             Eigen::DenseStorage<float, -1, -1, -1, 0>::DenseStorage()
+  0.02     41.42     0.01                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, 1, 0, -1, 1> >::data()
+  0.02     41.43     0.01                             Eigen::Matrix<float, -1, 1, 0, -1, 1>::Matrix<Eigen::Block<Eigen::Matrix<float, -1, 1, 0, -1, 1> const, -1, -1, false> >(Eigen::EigenBase<Eigen::Block<Eigen::Matrix<float, -1, 1, 0, -1, 1> const, -1, -1, false> > const&)
+  0.02     41.44     0.01                             Eigen::internal::gebp_kernel<float, float, long, Eigen::internal::blas_data_mapper<float, long, 0, 0>, 8, 4, false, false>::operator()(Eigen::internal::blas_data_mapper<float, long, 0, 0> const&, float const*, float const*, long, long, long, float, long, long, long, long)
+  0.02     41.45     0.01                             void Eigen::internal::pbroadcast4<float __vector(4)>(Eigen::internal::unpacket_traits<float __vector(4)>::type const*, float __vector(4)&, float __vector(4)&, float __vector(4)&, float __vector(4)&)
+  0.02     41.46     0.01                             Eigen::internal::variable_if_dynamic<long, 1>::value()
+  0.02     41.47     0.01                             Eigen::internal::dense_assignment_loop<Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::ArrayWrapper<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >, Eigen::internal::evaluator<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Array<float, -1, -1, 0, -1, -1> > >, Eigen::internal::add_assign_op<float, float>, 0>, 3, 0>::run(Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::ArrayWrapper<Eigen::Matrix<float, -1, -1, 0, -1, -1> > >, Eigen::internal::evaluator<Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<float>, Eigen::Array<float, -1, -1, 0, -1, -1> > >, Eigen::internal::add_assign_op<float, float>, 0>&)
+  0.02     41.48     0.01                             Eigen::internal::dense_assignment_loop<Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >, Eigen::internal::evaluator<Eigen::Replicate<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1, -1> >, Eigen::internal::add_assign_op<float, float>, 0>, 0, 0>::run(Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >, Eigen::internal::evaluator<Eigen::Replicate<Eigen::Matrix<float, -1, 1, 0, -1, 1>, 1, -1> >, Eigen::internal::add_assign_op<float, float>, 0>&)
+  0.02     41.49     0.01                             float* Eigen::internal::conditional_aligned_new_auto<float, true>(unsigned long)
+  0.02     41.50     0.01                             float __vector(4) Eigen::internal::padd<float __vector(4)>(float __vector(4) const&, float __vector(4) const&)
+  0.02     41.51     0.01                             float __vector(4) Eigen::internal::nullary_wrapper<float, Eigen::internal::scalar_constant_op<float>, true, false, false>::packetOp<float __vector(4), long>(Eigen::internal::scalar_constant_op<float> const&, long, long) const
+  0.02     41.52     0.01                             float __vector(4) Eigen::internal::mapbase_evaluator<Eigen::Block<Eigen::Matrix<float, -1, -1, 0, -1, -1> const, -1, 1, true>, Eigen::Matrix<float, -1, 1, 0, -1, 1> >::packet<0, float __vector(4)>(long) const
+  0.01     41.53     0.01                             Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::resize(long, long)
+  0.01     41.53     0.01                             void Eigen::internal::call_assignment_no_alias<Eigen::Matrix<float, -1, -1, 0, -1, -1>, Eigen::Matrix<float, -1, -1, 0, -1, -1>, Eigen::internal::assign_op<float, float> >(Eigen::Matrix<float, -1, -1, 0, -1, -1>&, Eigen::Matrix<float, -1, -1, 0, -1, -1> const&, Eigen::internal::assign_op<float, float> const&)
+  0.01     41.54     0.01                             void Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Block<Eigen::Matrix<float, -1, -1, 0, -1, -1>, -1, 1, true> >, Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >, Eigen::internal::assign_op<float, float>, 0>::assignPacket<16, 0, float __vector(4)>(long)
+  0.01     41.54     0.01                             void Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, -1, 0, -1, -1> >, Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, -1, -1, 0, -1, -1>, Eigen::Matrix<float, -1, -1, 0, -1, -1>, 1> >, Eigen::internal::assign_op<float, float>, 0>::assignPacket<16, 0, float __vector(4)>(long, long)
+  0.01     41.55     0.01                             void Eigen::internal::unaligned_dense_assignment_loop<true>::run<Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >, Eigen::internal::evaluator<Eigen::Block<Eigen::Matrix<float, -1, -1, 0, -1, -1> const, -1, 1, true> >, Eigen::internal::assign_op<float, float>, 0> >(Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, -1, 1, 0, -1, 1> >, Eigen::internal::evaluator<Eigen::Block<Eigen::Matrix<float, -1, -1, 0, -1, -1> const, -1, 1, true> >, Eigen::internal::assign_op<float, float>, 0>&, long, long)
+  0.01     41.55     0.01                             Eigen::EigenBase<Eigen::Matrix<float, -1, -1, 0, -1, -1> >::size() const
+  0.01     41.56     0.01                             __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > std::__copy_move_a2<false, float const*, __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > >(float const*, float const*, __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >)
+  0.01     41.56     0.01                             std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
